@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Global & Local VAriables
+  </title>
+  <script type ="text/javascript">
+    var global_var = "global variable " ;
+    function call_global()
+    {
+      document.write("Calling : " + global_var ) ;
+    }
+    call_global();
+    function call_local()
+    {
+      var local_var = "local variable";
+      document.write("<br />Calling : " + local_var);
+
+    }
+    call_local() ;
+    document.write("<br />");
+      document.write("<br />calling global variable : <-- " + global_var + "-->");
+    document.write("<br />calling local variable outside scope: ") ;
+    document.write(local_var);
+
+  </script>
+</head>
+<body>
+</body>
+</html>
